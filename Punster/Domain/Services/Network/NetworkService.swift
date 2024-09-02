@@ -18,7 +18,7 @@ final class NetworkService: NetworkServiceProtocol {
         self.baseURL = baseURL
     }
     
-    func request(endpoint: String, parameters: [String: Any]? = nil) async throws -> Data {
+    @discardableResult func request(endpoint: String, parameters: [String: Any]? = nil) async throws -> Data {
         let url = baseURL + endpoint
         // `withCheckedThrowingContinuation` is how we convert async blocks to modern asyn/await syntax.
         // We shouldstrive to use async/await over completion blocks as much as possible.
