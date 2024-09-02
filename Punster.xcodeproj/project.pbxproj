@@ -26,6 +26,9 @@
 		78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D8D2C8676BA009A2781 /* CacheService.swift */; };
 		78F56D912C867A08009A2781 /* JokeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D902C867A08009A2781 /* JokeServiceProtocol.swift */; };
 		78F56D932C867A0F009A2781 /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D922C867A0F009A2781 /* JokeService.swift */; };
+		78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */; };
+		78F56D992C8682C4009A2781 /* JokeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D982C8682C4009A2781 /* JokeDAO.swift */; };
+		78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D9A2C8685FE009A2781 /* CacheError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		78F56D8D2C8676BA009A2781 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		78F56D902C867A08009A2781 /* JokeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeServiceProtocol.swift; sourceTree = "<group>"; };
 		78F56D922C867A0F009A2781 /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
+		78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDAOProtocol.swift; sourceTree = "<group>"; };
+		78F56D982C8682C4009A2781 /* JokeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDAO.swift; sourceTree = "<group>"; };
+		78F56D9A2C8685FE009A2781 /* CacheError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 		78F56D5E2C85573D009A2781 /* DAOs */ = {
 			isa = PBXGroup;
 			children = (
+				78F56D952C8682B4009A2781 /* Joke */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 			children = (
 				78F56D8B2C867695009A2781 /* CacheServiceProtocol.swift */,
 				78F56D8D2C8676BA009A2781 /* CacheService.swift */,
+				78F56D9A2C8685FE009A2781 /* CacheError.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -326,6 +334,15 @@
 				78F56D852C866D8E009A2781 /* Network */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		78F56D952C8682B4009A2781 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */,
+				78F56D982C8682C4009A2781 /* JokeDAO.swift */,
+			);
+			path = Joke;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +430,7 @@
 				78F56D932C867A0F009A2781 /* JokeService.swift in Sources */,
 				78F56D772C85DDBA009A2781 /* Font+Extensions.swift in Sources */,
 				78F56D4C2C8555BA009A2781 /* ContentView.swift in Sources */,
+				78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
 				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
 				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
@@ -420,6 +438,8 @@
 				78F56D912C867A08009A2781 /* JokeServiceProtocol.swift in Sources */,
 				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
 				78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */,
+				78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */,
+				78F56D992C8682C4009A2781 /* JokeDAO.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
