@@ -22,6 +22,8 @@
 		78F56D842C85F51C009A2781 /* JokeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D832C85F51C009A2781 /* JokeType.swift */; };
 		78F56D872C866D98009A2781 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D862C866D98009A2781 /* NetworkService.swift */; };
 		78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D882C866DA1009A2781 /* NetworkServiceProtocol.swift */; };
+		78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D8B2C867695009A2781 /* CacheServiceProtocol.swift */; };
+		78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D8D2C8676BA009A2781 /* CacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		78F56D832C85F51C009A2781 /* JokeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeType.swift; sourceTree = "<group>"; };
 		78F56D862C866D98009A2781 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		78F56D882C866DA1009A2781 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		78F56D8B2C867695009A2781 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
+		78F56D8D2C8676BA009A2781 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 		78F56D5F2C855742009A2781 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				78F56D8A2C86768A009A2781 /* Cache */,
 				78F56D852C866D8E009A2781 /* Network */,
 			);
 			path = Services;
@@ -292,6 +297,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		78F56D8A2C86768A009A2781 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D8B2C867695009A2781 /* CacheServiceProtocol.swift */,
+				78F56D8D2C8676BA009A2781 /* CacheService.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,8 +392,10 @@
 				78F56D4C2C8555BA009A2781 /* ContentView.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
 				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
+				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
 				78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */,
 				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
+				78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

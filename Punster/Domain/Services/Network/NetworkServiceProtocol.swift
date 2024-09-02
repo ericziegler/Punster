@@ -9,5 +9,6 @@ import Foundation
 
 protocol NetworkServiceProtocol {
     var baseURL: String { get }
-    @discardableResult func request(endpoint: String, parameters: [String : Any]?) async throws -> Data
+    @discardableResult func request(endpoint: String,
+                                    parameters: [String : Any]?) async throws -> Data
 }
