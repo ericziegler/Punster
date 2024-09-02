@@ -11,6 +11,7 @@
 		78F56D4C2C8555BA009A2781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D4B2C8555BA009A2781 /* ContentView.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
+		78F56D6D2C8557A9009A2781 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D6C2C8557A9009A2781 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		78F56D4B2C8555BA009A2781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F56D502C8555BB009A2781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78F56D6C2C8557A9009A2781 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,12 @@
 		78F56D482C8555BA009A2781 /* Punster */ = {
 			isa = PBXGroup;
 			children = (
-				78F56D492C8555BA009A2781 /* PunsterApp.swift */,
-				78F56D4B2C8555BA009A2781 /* ContentView.swift */,
-				78F56D4D2C8555BB009A2781 /* Assets.xcassets */,
+				78F56D572C8556E4009A2781 /* App */,
+				78F56D582C8556EA009A2781 /* Domain */,
+				78F56D592C8556F2009A2781 /* Presentation */,
+				78F56D5A2C8556F8009A2781 /* Components */,
+				78F56D5B2C855700009A2781 /* Utilities */,
+				78F56D5C2C85570C009A2781 /* SupportFiles */,
 				78F56D4F2C8555BB009A2781 /* Preview Content */,
 			);
 			path = Punster;
@@ -65,6 +70,180 @@
 				78F56D502C8555BB009A2781 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78F56D572C8556E4009A2781 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D492C8555BA009A2781 /* PunsterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		78F56D582C8556EA009A2781 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D5D2C855739009A2781 /* Models */,
+				78F56D5E2C85573D009A2781 /* DAOs */,
+				78F56D5F2C855742009A2781 /* Services */,
+				78F56D602C855746009A2781 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		78F56D592C8556F2009A2781 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D622C85575B009A2781 /* Home */,
+				78F56D612C855756009A2781 /* Shared */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		78F56D5A2C8556F8009A2781 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D632C855760009A2781 /* Buttons */,
+				78F56D642C855766009A2781 /* Labels */,
+				78F56D652C85576C009A2781 /* Views */,
+				78F56D662C855776009A2781 /* Helpers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		78F56D5B2C855700009A2781 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D692C855789009A2781 /* Constants */,
+				78F56D6A2C85578C009A2781 /* Extensions */,
+				78F56D6B2C855793009A2781 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		78F56D5C2C85570C009A2781 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D4D2C8555BB009A2781 /* Assets.xcassets */,
+				78F56D6C2C8557A9009A2781 /* Colors.xcassets */,
+				78F56D6E2C8557B1009A2781 /* Fonts */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		78F56D5D2C855739009A2781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78F56D5E2C85573D009A2781 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
+		78F56D5F2C855742009A2781 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78F56D602C855746009A2781 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		78F56D612C855756009A2781 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		78F56D622C85575B009A2781 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D4B2C8555BA009A2781 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		78F56D632C855760009A2781 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		78F56D642C855766009A2781 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		78F56D652C85576C009A2781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78F56D662C855776009A2781 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D672C85577C009A2781 /* Modifiers */,
+				78F56D682C855781009A2781 /* Styles */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		78F56D672C85577C009A2781 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		78F56D682C855781009A2781 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		78F56D692C855789009A2781 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		78F56D6A2C85578C009A2781 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78F56D6B2C855793009A2781 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		78F56D6E2C8557B1009A2781 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F56D6D2C8557A9009A2781 /* Colors.xcassets in Resources */,
 				78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */,
 				78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */,
 			);
@@ -278,8 +458,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +487,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
