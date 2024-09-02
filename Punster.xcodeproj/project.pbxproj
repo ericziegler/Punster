@@ -20,6 +20,8 @@
 		78F56D7D2C85DEBF009A2781 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 78F56D7C2C85DEBF009A2781 /* Alamofire */; };
 		78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D7E2C85F3F5009A2781 /* Joke.swift */; };
 		78F56D842C85F51C009A2781 /* JokeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D832C85F51C009A2781 /* JokeType.swift */; };
+		78F56D872C866D98009A2781 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D862C866D98009A2781 /* NetworkService.swift */; };
+		78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D882C866DA1009A2781 /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		78F56D762C85DDBA009A2781 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		78F56D7E2C85F3F5009A2781 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		78F56D832C85F51C009A2781 /* JokeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeType.swift; sourceTree = "<group>"; };
+		78F56D862C866D98009A2781 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		78F56D882C866DA1009A2781 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		78F56D5F2C855742009A2781 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				78F56D852C866D8E009A2781 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,6 +283,15 @@
 			path = Jokes;
 			sourceTree = "<group>";
 		};
+		78F56D852C866D8E009A2781 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D882C866DA1009A2781 /* NetworkServiceProtocol.swift */,
+				78F56D862C866D98009A2781 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,7 +377,9 @@
 				78F56D772C85DDBA009A2781 /* Font+Extensions.swift in Sources */,
 				78F56D4C2C8555BA009A2781 /* ContentView.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
+				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
 				78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */,
+				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
