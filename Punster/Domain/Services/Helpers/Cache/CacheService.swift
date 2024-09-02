@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CacheService: CacheServiceProtocol {
+final class CacheService: CacheServiceProtocol {
     
     private let userDefaults = UserDefaults()
     
