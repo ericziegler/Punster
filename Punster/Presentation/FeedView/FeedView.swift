@@ -12,7 +12,9 @@ struct FeedView: View {
     @StateObject private var viewModel = FeedViewModel()
     
     var body: some View {
-        Text("Feed")
+        PageBackground {
+            Text("Feed")
+        }
     }
 }
 

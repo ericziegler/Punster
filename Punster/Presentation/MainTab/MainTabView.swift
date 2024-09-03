@@ -20,7 +20,7 @@ struct MainTabView: View {
                 renderTab(view: FavoritesView(), tab: .favorites)
                 renderTab(view: SettingsView(), tab: .settings)
             }
-            .toolbarBackground(Color.appBackground, for: .tabBar)
+            .toolbarBackground(Color.appBackgroundTertiary, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
         .tint(Color.appGreen)

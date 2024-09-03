@@ -12,7 +12,9 @@ struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
     
     var body: some View {
-        Text("Settings")
+        PageBackground {
+            Text("Settings")
+        }
     }
 }
 
