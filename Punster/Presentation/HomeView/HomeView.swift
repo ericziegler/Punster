@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// !! - Remember, a View and ViewModel essentially make up a ViewController. The actual laying out of the view
+//      happens in the view, while all of the logic is broken out into the view model. This keeps us from having
+//      massive files that maintain both business logic AND UI code.
 struct HomeView: View {
     
     @StateObject private var viewModel = HomeViewModel()
