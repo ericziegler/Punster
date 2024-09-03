@@ -26,7 +26,8 @@ final class JokeService: JokeServiceProtocol {
                                                         parameters: parameters)
         
         
-        let jokes = try JSONDecoder().decode(Jokes.self, from: jsonData)
+        let jokeResult = try JSONDecoder().decode(JokeResult.self, from: jsonData)
+        let jokes = jokeResult.jokes
         return jokes
     }
 }

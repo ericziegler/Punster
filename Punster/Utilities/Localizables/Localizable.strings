@@ -2,8 +2,20 @@
 //  Created by Eric Ziegler on 9/2/24.
 //
 
-// Tabs
+// Shared
+"OK" = "OK";
+"Uh oh!" = "Uh oh!";
+"An error occurred." = "An error occurred.";
+"Reason:" = "Reason:";
+
+// Home
 "Home" = "Home";
+
+// Feed
 "Feed" = "Feed";
+
+// Favorites
 "Favorites" = "Favorites";
+
+// Settings
 "Settings" = "Settings";

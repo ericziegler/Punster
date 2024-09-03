@@ -18,6 +18,20 @@ struct FeedView: View {
             }
             .appNavBar(title: Constants.Strings.Feed.feed)
         }
+        .onAppear(perform: {
+            Task {
+                await viewModel.loadData()
+            }
+        })
+        .alert(viewModel.alertInfo.title,
+               isPresented: $viewModel.isAlertVisible,
+               actions: {
+            Button(viewModel.alertInfo.okButton) {
+                viewModel.isAlertVisible.toggle()
+            }
+        }, message: {
+            Text(viewModel.alertInfo.message)
+        })
     }
 }
 

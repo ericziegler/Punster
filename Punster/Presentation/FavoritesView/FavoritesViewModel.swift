@@ -7,6 +7,6 @@
 
 import Foundation
 
-final class FavoritesViewModel: ObservableObject {
+@MainActor final class FavoritesViewModel: ObservableObject {
     
 }
