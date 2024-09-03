@@ -14,16 +14,14 @@ struct FeedView: View {
     var body: some View {
         NavigationStack {
             PageBackground {
-                List(viewModel.jokes, id: \.self) { joke in
+                List(viewModel.feedJokes.indices, id: \.self) { index in
                     JokeContainer(
-                        joke: joke,
-                        // TODO: EZ
-                        colorScheme: .pineGreen, // Hardcoded color scheme
+                        joke: viewModel.feedJokes[index].joke,
+                        colorScheme: viewModel.feedJokes[index].colorScheme,
                         onFavoriteTapped: {
-                            // TODO: EZ
-                            // Handle the favorite tap here
-                            print("Favorite tapped for joke: \(joke.text)")
-                        }, isFavorite: .constant(false)
+                            viewModel.toggleFavoriteJoke(at: index)
+                        },
+                        isFavorite: $viewModel.feedJokes[index].isFavorite
                     )
                     .listRowBackground(Color.clear)
                 }

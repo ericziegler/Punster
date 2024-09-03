@@ -32,6 +32,7 @@
 		782D46022C873F23001263A1 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46012C873F23001263A1 /* Color+Extensions.swift */; };
 		782D46042C874190001263A1 /* PagedJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46032C874190001263A1 /* PagedJokeView.swift */; };
 		782D46062C8743EE001263A1 /* JokeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46052C8743EE001263A1 /* JokeContainer.swift */; };
+		782D46082C87696D001263A1 /* FeedJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46072C87696D001263A1 /* FeedJoke.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		782D46012C873F23001263A1 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		782D46032C874190001263A1 /* PagedJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedJokeView.swift; sourceTree = "<group>"; };
 		782D46052C8743EE001263A1 /* JokeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeContainer.swift; sourceTree = "<group>"; };
+		782D46072C87696D001263A1 /* FeedJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedJoke.swift; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 				782D45DE2C86B61B001263A1 /* JokeResult.swift */,
 				78F56D7E2C85F3F5009A2781 /* Joke.swift */,
 				78F56D832C85F51C009A2781 /* JokeType.swift */,
+				782D46072C87696D001263A1 /* FeedJoke.swift */,
 			);
 			path = Joke;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				78F56DB22C86A692009A2781 /* String+Extensions.swift in Sources */,
 				782D45FA2C873CDC001263A1 /* AppTextStyle.swift in Sources */,
 				78F56DA92C86A4C1009A2781 /* Constants.swift in Sources */,
+				782D46082C87696D001263A1 /* FeedJoke.swift in Sources */,
 				782D46002C873F01001263A1 /* ColorScheme.swift in Sources */,
 				782D45F82C873CCD001263A1 /* AppLabel.swift in Sources */,
 				78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */,

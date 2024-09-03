@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor final class FeedViewModel: ObservableObject {
     
-    @Published var jokes = Jokes()
+    @Published var feedJokes = FeedJokes()
     @Published var isAlertVisible = false
     @Published var alertInfo = AlertInfo()
     
@@ -20,11 +20,21 @@ import Foundation
     }
     
     func loadData() async {
-        // TODO: EZ - Put back
-        jokes = Joke.mockArray
-        return
         do {
-            jokes = try await jokeRepository.fetchJokes(quantity: 10)
+            // Load jokes from API
+            // TODO: EZ - Put back
+            let loadedJokes = Joke.mockArray//try await jokeRepository.fetchJokes(quantity: 10)
+            // Load color schemes
+            let allColorSchemes = ColorScheme.allCases.shuffled()
+            // Load favorites
+            let favorites = try jokeRepository.loadFavorites()
+            // Create a list of Feed jokes from the loaded jokes, with a random color scheme, and set their favorite value
+            feedJokes = []
+            for (index, joke) in loadedJokes.enumerated() {
+                feedJokes.append(.init(joke: joke,
+                                       isFavorite: favorites.contains(where: {$0.id == joke.id}),
+                                       colorScheme: allColorSchemes[index % allColorSchemes.count]))
+            }
         } catch {
             handleError(error)
         }
@@ -34,6 +44,21 @@ import Foundation
         alertInfo = AlertInfo(title: Constants.Strings.Shared.uhoh,
                               message: "\(Constants.Strings.Shared.errorOccurred) \(Constants.Strings.Shared.reasonColon) \(error)")
         isAlertVisible = true
+    }
+    
+    func toggleFavoriteJoke(at index: Int) {
+        let feedJoke = feedJokes[index]
+        do {
+            if feedJoke.isFavorite {
+                try jokeRepository.removeFavorite(joke: feedJoke.joke)
+            } else {
+                try jokeRepository.addFavorite(joke: feedJoke.joke)
+            }
+            
+            feedJokes[index].isFavorite.toggle()
+        } catch {
+            print("Failed to update favorite.")
+        }
     }
     
 }

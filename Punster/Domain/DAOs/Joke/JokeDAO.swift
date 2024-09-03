@@ -31,7 +31,10 @@ final class JokeDAO: JokeDAOProtocol {
     }
     
     func addFavorite(joke: Joke) throws {
-        var cachedFavorites = try loadFavorites()
+        var cachedFavorites = Jokes()
+        if let foundFavorites = try? loadFavorites() {
+            cachedFavorites = foundFavorites
+        }
         
         guard !cachedFavorites.contains(where: { $0.id == joke.id }) else {
             // Joke already exists in favorites. Do not add again.

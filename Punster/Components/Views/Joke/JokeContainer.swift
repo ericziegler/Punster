@@ -14,8 +14,7 @@ struct JokeContainer: View {
     var colorScheme: ColorScheme
     // !! - This is a commone way to pass back up from a child to a parent.
     //      We should avoid delegation as it makes the light views cumbersome.
-    var onFavoriteTapped: (() -> Void)?
-    
+    var onFavoriteTapped: (() -> Void)?    
     // !! - Similar to @State, changing the value of this property will force the
     //      view to redraw itself. The reason this is a binding and not @State is
     //      because a parent view holds the actual @State version of it

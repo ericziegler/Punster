@@ -14,8 +14,8 @@ enum ColorScheme: Int, CaseIterable {
     case goldenrod
     case crimson
     case dodgerBlue
-    case princeton
     case indigo
+    case charcoal
     
     var background: Color {
         switch self {
@@ -29,16 +29,16 @@ enum ColorScheme: Int, CaseIterable {
             return Color(hex: "#D7263D")
         case .dodgerBlue:
             return Color(hex: "#0197F6")
-        case .princeton:
-            return Color(hex: "#FF9505")
         case .indigo:
             return Color(hex: "#4F1271")
+        case .charcoal:
+            return Color(hex: "#333333")
         }
     }
     
     var foreground: Color {
         switch self {
-        case .pineGreen, .crimson, .indigo:
+        case .pineGreen, .crimson, .indigo, .charcoal:
             return .white
         default:
             return .black
