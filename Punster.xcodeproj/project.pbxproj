@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		782D45CE2C86AA89001263A1 /* PageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45CD2C86AA89001263A1 /* PageBackground.swift */; };
+		782D45D02C86ACB9001263A1 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45CF2C86ACB9001263A1 /* NavBarModifier.swift */; };
+		782D45D22C86ACFC001263A1 /* Constants+Strings+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */; };
+		782D45D42C86AD06001263A1 /* Constants+Strings+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */; };
+		782D45D62C86AD10001263A1 /* Constants+Strings+Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */; };
+		782D45D82C86AD18001263A1 /* Constants+Feeds+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -35,7 +40,6 @@
 		78F56DA52C86A461009A2781 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DA42C86A461009A2781 /* MainTabView.swift */; };
 		78F56DA72C86A473009A2781 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DA62C86A473009A2781 /* MainTabViewModel.swift */; };
 		78F56DA92C86A4C1009A2781 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DA82C86A4C1009A2781 /* Constants.swift */; };
-		78F56DAD2C86A54A009A2781 /* Constants+Strings+Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DAC2C86A54A009A2781 /* Constants+Strings+Tabs.swift */; };
 		78F56DB02C86A62D009A2781 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78F56DAF2C86A62D009A2781 /* Localizable.strings */; };
 		78F56DB22C86A692009A2781 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB12C86A692009A2781 /* String+Extensions.swift */; };
 		78F56DB52C86A746009A2781 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB42C86A746009A2781 /* HomeView.swift */; };
@@ -50,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		782D45CD2C86AA89001263A1 /* PageBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBackground.swift; sourceTree = "<group>"; };
+		782D45CF2C86ACB9001263A1 /* NavBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarModifier.swift; sourceTree = "<group>"; };
+		782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Home.swift"; sourceTree = "<group>"; };
+		782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Feed.swift"; sourceTree = "<group>"; };
+		782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Favorites.swift"; sourceTree = "<group>"; };
+		782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Feeds+Settings.swift"; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +86,6 @@
 		78F56DA42C86A461009A2781 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		78F56DA62C86A473009A2781 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		78F56DA82C86A4C1009A2781 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		78F56DAC2C86A54A009A2781 /* Constants+Strings+Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Tabs.swift"; sourceTree = "<group>"; };
 		78F56DAF2C86A62D009A2781 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		78F56DB12C86A692009A2781 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		78F56DB42C86A746009A2781 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -280,6 +288,7 @@
 		78F56D672C85577C009A2781 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				782D45CF2C86ACB9001263A1 /* NavBarModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -404,7 +413,10 @@
 		78F56DAA2C86A512009A2781 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				78F56DAC2C86A54A009A2781 /* Constants+Strings+Tabs.swift */,
+				782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */,
+				782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */,
+				782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */,
+				782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -562,15 +574,19 @@
 				78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */,
 				78F56DBA2C86A780009A2781 /* FeedViewModel.swift in Sources */,
 				78F56DC62C86A7E5009A2781 /* SettingsView.swift in Sources */,
+				782D45D82C86AD18001263A1 /* Constants+Feeds+Settings.swift in Sources */,
 				78F56DA52C86A461009A2781 /* MainTabView.swift in Sources */,
+				782D45D62C86AD10001263A1 /* Constants+Strings+Favorites.swift in Sources */,
 				78F56D912C867A08009A2781 /* JokeServiceProtocol.swift in Sources */,
+				782D45D42C86AD06001263A1 /* Constants+Strings+Feed.swift in Sources */,
 				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
-				78F56DAD2C86A54A009A2781 /* Constants+Strings+Tabs.swift in Sources */,
 				78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */,
 				78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */,
 				78F56D992C8682C4009A2781 /* JokeDAO.swift in Sources */,
+				782D45D02C86ACB9001263A1 /* NavBarModifier.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 				78F56DA72C86A473009A2781 /* MainTabViewModel.swift in Sources */,
+				782D45D22C86ACFC001263A1 /* Constants+Strings+Home.swift in Sources */,
 				782D45CE2C86AA89001263A1 /* PageBackground.swift in Sources */,
 				78F56DC42C86A7D7009A2781 /* SettingsViewModel.swift in Sources */,
 			);

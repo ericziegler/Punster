@@ -12,8 +12,11 @@ struct FavoritesView: View {
     @StateObject private var viewModel = FavoritesViewModel()
     
     var body: some View {
-        PageBackground {
-            Text("Favorites")
+        NavigationStack {
+            PageBackground {
+                Text(Constants.Strings.Favorites.favorites)
+            }
+            .appNavBar(title: Constants.Strings.Favorites.favorites)
         }
     }
 }

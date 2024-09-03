@@ -12,8 +12,11 @@ struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
     
     var body: some View {
-        PageBackground {
-            Text("Settings")
+        NavigationStack {
+            PageBackground {
+                Text(Constants.Strings.Settings.settings)
+            }
+            .appNavBar(title: Constants.Strings.Settings.settings)
         }
     }
 }

@@ -12,8 +12,11 @@ struct FeedView: View {
     @StateObject private var viewModel = FeedViewModel()
     
     var body: some View {
-        PageBackground {
-            Text("Feed")
+        NavigationStack {
+            PageBackground {
+                Text(Constants.Strings.Feed.feed)
+            }
+            .appNavBar(title: Constants.Strings.Feed.feed)
         }
     }
 }

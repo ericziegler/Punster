@@ -12,8 +12,11 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
-        PageBackground {
-            Text("Home")
+        NavigationStack {
+            PageBackground {
+                Text(Constants.Strings.Home.home)
+            }
+            .appNavBar(title: Constants.Strings.Home.home)
         }
     }
 }

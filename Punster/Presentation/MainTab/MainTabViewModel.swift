@@ -18,13 +18,13 @@ final class MainTabViewModel: ObservableObject {
         var text: String {
             switch self {
             case .home:
-                return Constants.Strings.Tabs.home
+                return Constants.Strings.Home.home
             case .feed:
-                return Constants.Strings.Tabs.feed
+                return Constants.Strings.Feed.feed
             case .favorites:
-                return Constants.Strings.Tabs.favorites
+                return Constants.Strings.Favorites.favorites
             case .settings:
-                return Constants.Strings.Tabs.settings
+                return Constants.Strings.Settings.settings
             }
         }
         
