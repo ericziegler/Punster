@@ -65,7 +65,7 @@ final class DependencyContainer {
         return service
     }
     
-    // TODO: EZ
+    // TODO: EZ - Set up unit tests
 //    func setupForUnitTests() {
 //        // Clear all registrations
 //        container.removeAll()
