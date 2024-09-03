@@ -7,9 +7,16 @@
 
 import SwiftUI
 
+// !! - FeedView/ViewModel cover both the Feed tab and the Favorites tab based on FeedViewType
 struct FeedView: View {
+        
+    @StateObject private var viewModel: FeedViewModel
     
-    @StateObject private var viewModel = FeedViewModel()
+    init(feedViewType: FeedViewType) {
+        // !! - This is the syntax for setting a StateObject in the init of a View:
+        //      underscore<variableName> = StateObject(wrappedValue: <object you want to set it to>)
+        _viewModel = StateObject(wrappedValue: FeedViewModel(feedViewType: feedViewType))
+    }
     
     var body: some View {
         NavigationStack {
@@ -29,7 +36,7 @@ struct FeedView: View {
                 .listStyle(.plain)
                 .padding(.vertical, 20)
             }
-            .appNavBar(title: Constants.Strings.Feed.feed)
+            .appNavBar(title: viewModel.feedViewType == .feed ? Constants.Strings.Feed.feed : Constants.Strings.Favorites.favorites)
         }
         .onAppear(perform: {
             Task {
@@ -49,5 +56,5 @@ struct FeedView: View {
 }
 
 #Preview {
-    FeedView()
+    FeedView(feedViewType: .feed)
 }

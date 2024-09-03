@@ -30,8 +30,8 @@ struct MainTabView: View {
         TabView(selection: $selectedTab) {
             Group {
                 renderTab(view: HomeView(), tab: .home)
-                renderTab(view: FeedView(), tab: .feed)
-                renderTab(view: FavoritesView(), tab: .favorites)
+                renderTab(view: FeedView(feedViewType: .feed), tab: .feed)
+                renderTab(view: FeedView(feedViewType: .favorite), tab: .favorites)
                 renderTab(view: SettingsView(), tab: .settings)
             }
             .toolbarBackground(Color.appBackgroundTertiary, for: .tabBar)

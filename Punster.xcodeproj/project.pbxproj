@@ -66,8 +66,6 @@
 		78F56DB72C86A74D009A2781 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB62C86A74D009A2781 /* HomeViewModel.swift */; };
 		78F56DBA2C86A780009A2781 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB92C86A780009A2781 /* FeedViewModel.swift */; };
 		78F56DBC2C86A787009A2781 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DBB2C86A787009A2781 /* FeedView.swift */; };
-		78F56DBF2C86A7AC009A2781 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DBE2C86A7AC009A2781 /* FavoritesViewModel.swift */; };
-		78F56DC12C86A7BA009A2781 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DC02C86A7BA009A2781 /* FavoritesView.swift */; };
 		78F56DC42C86A7D7009A2781 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DC32C86A7D7009A2781 /* SettingsViewModel.swift */; };
 		78F56DC62C86A7E5009A2781 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DC52C86A7E5009A2781 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
@@ -132,8 +130,6 @@
 		78F56DB62C86A74D009A2781 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		78F56DB92C86A780009A2781 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		78F56DBB2C86A787009A2781 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		78F56DBE2C86A7AC009A2781 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
-		78F56DC02C86A7BA009A2781 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		78F56DC32C86A7D7009A2781 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		78F56DC52C86A7E5009A2781 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,7 +264,6 @@
 				78F56DA32C86A45A009A2781 /* MainTab */,
 				78F56DB32C86A73C009A2781 /* HomeView */,
 				78F56DB82C86A772009A2781 /* FeedView */,
-				78F56DBD2C86A7A2009A2781 /* FavoritesView */,
 				78F56DC22C86A7CB009A2781 /* SettingsView */,
 				78F56D612C855756009A2781 /* Shared */,
 			);
@@ -562,15 +557,6 @@
 			path = FeedView;
 			sourceTree = "<group>";
 		};
-		78F56DBD2C86A7A2009A2781 /* FavoritesView */ = {
-			isa = PBXGroup;
-			children = (
-				78F56DC02C86A7BA009A2781 /* FavoritesView.swift */,
-				78F56DBE2C86A7AC009A2781 /* FavoritesViewModel.swift */,
-			);
-			path = FavoritesView;
-			sourceTree = "<group>";
-		};
 		78F56DC22C86A7CB009A2781 /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,13 +667,11 @@
 				782D45F02C86BC4A001263A1 /* AppButton.swift in Sources */,
 				78F56D772C85DDBA009A2781 /* Font+Extensions.swift in Sources */,
 				782D45F22C86BC93001263A1 /* TextModifiers.swift in Sources */,
-				78F56DC12C86A7BA009A2781 /* FavoritesView.swift in Sources */,
 				78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */,
 				782D45F42C86BD04001263A1 /* Constants+Strings+Login.swift in Sources */,
 				78F56DA22C8690BC009A2781 /* JokeRepository.swift in Sources */,
 				78F56DBC2C86A787009A2781 /* FeedView.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
-				78F56DBF2C86A7AC009A2781 /* FavoritesViewModel.swift in Sources */,
 				782D45E72C86BA70001263A1 /* UserRepositoryProtocol.swift in Sources */,
 				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
 				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
