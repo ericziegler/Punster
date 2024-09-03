@@ -20,6 +20,11 @@
 		782D45E42C86B8DE001263A1 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E32C86B8DE001263A1 /* UserDAO.swift */; };
 		782D45E72C86BA70001263A1 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E62C86BA70001263A1 /* UserRepositoryProtocol.swift */; };
 		782D45E92C86BA7E001263A1 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E82C86BA7E001263A1 /* UserRepository.swift */; };
+		782D45EB2C86BB6B001263A1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45EA2C86BB6B001263A1 /* AppState.swift */; };
+		782D45EE2C86BC1D001263A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45ED2C86BC1D001263A1 /* LoginView.swift */; };
+		782D45F02C86BC4A001263A1 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45EF2C86BC4A001263A1 /* AppButton.swift */; };
+		782D45F22C86BC93001263A1 /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F12C86BC93001263A1 /* TextModifiers.swift */; };
+		782D45F42C86BD04001263A1 /* Constants+Strings+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -73,6 +78,11 @@
 		782D45E32C86B8DE001263A1 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		782D45E62C86BA70001263A1 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
 		782D45E82C86BA7E001263A1 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		782D45EA2C86BB6B001263A1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		782D45ED2C86BC1D001263A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		782D45EF2C86BC4A001263A1 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		782D45F12C86BC93001263A1 /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
+		782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Login.swift"; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +161,14 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		782D45EC2C86BC0B001263A1 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				782D45ED2C86BC1D001263A1 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 		78F56D3D2C8555BA009A2781 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				78F56D492C8555BA009A2781 /* PunsterApp.swift */,
+				782D45EA2C86BB6B001263A1 /* AppState.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -211,6 +230,7 @@
 		78F56D592C8556F2009A2781 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				782D45EC2C86BC0B001263A1 /* LoginView */,
 				78F56DA32C86A45A009A2781 /* MainTab */,
 				78F56DB32C86A73C009A2781 /* HomeView */,
 				78F56DB82C86A772009A2781 /* FeedView */,
@@ -300,6 +320,7 @@
 		78F56D632C855760009A2781 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				782D45EF2C86BC4A001263A1 /* AppButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -332,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				782D45CF2C86ACB9001263A1 /* NavBarModifier.swift */,
+				782D45F12C86BC93001263A1 /* TextModifiers.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -458,6 +480,7 @@
 			isa = PBXGroup;
 			children = (
 				782D45DC2C86B403001263A1 /* Constants+Strings+Shared.swift */,
+				782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */,
 				782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */,
 				782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */,
 				782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */,
@@ -608,10 +631,15 @@
 				78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */,
 				78F56DA02C8690B5009A2781 /* JokeRepositoryProtocol.swift in Sources */,
 				78F56DB72C86A74D009A2781 /* HomeViewModel.swift in Sources */,
+				782D45EE2C86BC1D001263A1 /* LoginView.swift in Sources */,
 				78F56DB52C86A746009A2781 /* HomeView.swift in Sources */,
+				782D45EB2C86BB6B001263A1 /* AppState.swift in Sources */,
+				782D45F02C86BC4A001263A1 /* AppButton.swift in Sources */,
 				78F56D772C85DDBA009A2781 /* Font+Extensions.swift in Sources */,
+				782D45F22C86BC93001263A1 /* TextModifiers.swift in Sources */,
 				78F56DC12C86A7BA009A2781 /* FavoritesView.swift in Sources */,
 				78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */,
+				782D45F42C86BD04001263A1 /* Constants+Strings+Login.swift in Sources */,
 				78F56DA22C8690BC009A2781 /* JokeRepository.swift in Sources */,
 				78F56DBC2C86A787009A2781 /* FeedView.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,

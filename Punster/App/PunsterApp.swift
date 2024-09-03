@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct PunsterApp: App {
+    
+    @StateObject private var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if appState.isUserLoggedIn {
+                MainTabView()
+            } else {
+                LoginView()
+                    .environmentObject(appState)
+            }
         }
     }
 }

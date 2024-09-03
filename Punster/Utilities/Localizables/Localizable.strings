@@ -8,6 +8,10 @@
 "An error occurred." = "An error occurred.";
 "Reason:" = "Reason:";
 
+// Login
+"Login" = "Login";
+"This login is super secure. Tap the button to login.";
+
 // Home
 "Home" = "Home";
 

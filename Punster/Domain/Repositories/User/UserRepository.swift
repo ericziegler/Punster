@@ -10,11 +10,12 @@ import Foundation
 final class UserRepository: UserRepositoryProtocol {
     
     private(set) var dao: UserDAOProtocol
-    private(set) var isUserLoggedIn: Bool
+    var isUserLoggedIn: Bool {
+        dao.isUserLoggedIn
+    }
     
     init(dao: UserDAOProtocol) {
         self.dao = dao
-        self.isUserLoggedIn = dao.isUserLoggedIn
     }
     
     func login() {
