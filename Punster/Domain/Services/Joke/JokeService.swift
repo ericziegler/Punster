@@ -18,7 +18,7 @@ final class JokeService: JokeServiceProtocol {
     func fetchDailyJoke() async throws -> Joke {
         let endpoint = "/Pun"
         let parameters = [
-            "blackListFlags": "nsfw,religious,political,racist,sexist,explici",
+            "blackListFlags": "nsfw,religious,political,racist,sexist,explicit",
             "amount": "1"
         ]
         
@@ -33,7 +33,7 @@ final class JokeService: JokeServiceProtocol {
     func fetchJokes(quantity: Int = 10) async throws -> Jokes {
         let endpoint = "/Pun"
         let parameters = [
-            "blackListFlags": "nsfw,religious,political,racist,sexist,explici",
+            "blackListFlags": "nsfw,religious,political,racist,sexist,explicit",
             "amount": String(quantity)
         ]
         
