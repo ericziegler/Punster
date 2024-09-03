@@ -27,10 +27,9 @@ struct AppNavBarModifier<Leading, Trailing>: ViewModifier where Leading: View, T
                 // Title
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text(title)
-                            .font(font)
-                            .foregroundStyle(.appText)
-                            .offset(y: offsetY)
+                        AppLabel(text: title.uppercased(),
+                                 style: .largeTitle)
+                        .offset(y: offsetY)
                     }
                 }
                 

@@ -25,6 +25,8 @@
 		782D45F02C86BC4A001263A1 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45EF2C86BC4A001263A1 /* AppButton.swift */; };
 		782D45F22C86BC93001263A1 /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F12C86BC93001263A1 /* TextModifiers.swift */; };
 		782D45F42C86BD04001263A1 /* Constants+Strings+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */; };
+		782D45F82C873CCD001263A1 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F72C873CCD001263A1 /* AppLabel.swift */; };
+		782D45FA2C873CDC001263A1 /* AppTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F92C873CDC001263A1 /* AppTextStyle.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -83,6 +85,8 @@
 		782D45EF2C86BC4A001263A1 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		782D45F12C86BC93001263A1 /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
 		782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Login.swift"; sourceTree = "<group>"; };
+		782D45F72C873CCD001263A1 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		782D45F92C873CDC001263A1 /* AppTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextStyle.swift; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 		78F56D642C855766009A2781 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				782D45F72C873CCD001263A1 /* AppLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 		78F56D682C855781009A2781 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				782D45F92C873CDC001263A1 /* AppTextStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -627,7 +633,9 @@
 				782D45DF2C86B61B001263A1 /* JokeResult.swift in Sources */,
 				782D45DD2C86B403001263A1 /* Constants+Strings+Shared.swift in Sources */,
 				78F56DB22C86A692009A2781 /* String+Extensions.swift in Sources */,
+				782D45FA2C873CDC001263A1 /* AppTextStyle.swift in Sources */,
 				78F56DA92C86A4C1009A2781 /* Constants.swift in Sources */,
+				782D45F82C873CCD001263A1 /* AppLabel.swift in Sources */,
 				78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */,
 				78F56DA02C8690B5009A2781 /* JokeRepositoryProtocol.swift in Sources */,
 				78F56DB72C86A74D009A2781 /* HomeViewModel.swift in Sources */,

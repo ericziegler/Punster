@@ -20,8 +20,8 @@ struct LoginView: View {
         //      PageBackground(overrideColor: Color.red) {
         PageBackground {
             VStack {
-                Text(Constants.Strings.Login.loginMessage)
-                    .appRegularFont(size: 24)
+                AppLabel(text: Constants.Strings.Login.loginMessage,
+                         style: .body)
                     .padding(.bottom, 20)
                     .multilineTextAlignment(.center)
                 AppButton(text: Constants.Strings.Login.login.uppercased()) {
