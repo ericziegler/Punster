@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// !! - JokeContainer contains a PagedJokeView contains a JokeView
 struct JokeContainer: View {
     
     var joke: Joke
@@ -24,8 +25,8 @@ struct JokeContainer: View {
         PageBackground(overrideColor: .appBackgroundTertiary) {
             VStack {
                 renderFavoriteBar()
-                PagedJokeView(joke: joke,
-                              colorScheme: colorScheme)
+                PagedJokeView(joke: joke, colorScheme: colorScheme)
+                    .frame(minHeight: 200, maxHeight: 350)
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 20)

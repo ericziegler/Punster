@@ -9,7 +9,7 @@ import Foundation
 
 typealias Jokes = [Joke]
 
-struct Joke: Codable {
+struct Joke: Hashable, Codable {
     
     // MARK: - Properties
     

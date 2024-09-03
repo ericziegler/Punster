@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct PagedJokeView: View {
-    
     private var texts: [String]
     private var colorScheme: ColorScheme
     
     @State private var currentIndex: Int = 0
     
-    init(joke: Joke,
-         colorScheme: ColorScheme) {
+    init(joke: Joke, colorScheme: ColorScheme) {
         texts = []
         texts.append(joke.text)
         if let setupText = joke.setupText {
@@ -27,8 +25,7 @@ struct PagedJokeView: View {
     var body: some View {
         TabView(selection: $currentIndex) {
             ForEach(0..<texts.count, id: \.self) { index in
-                JokeView(text: texts[index],
-                         colorScheme: colorScheme)
+                JokeView(text: texts[index], colorScheme: colorScheme)
                 .tag(index)
                 .onTapGesture {
                     toggleIndex()

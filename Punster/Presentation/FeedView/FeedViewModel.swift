@@ -20,10 +20,11 @@ import Foundation
     }
     
     func loadData() async {
+        // TODO: EZ - Put back
+        jokes = Joke.mockArray
+        return
         do {
             jokes = try await jokeRepository.fetchJokes(quantity: 10)
-            print(jokes)
-            print("STOP")
         } catch {
             handleError(error)
         }

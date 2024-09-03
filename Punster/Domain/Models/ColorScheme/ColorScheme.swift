@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// !! - This is just to color the various joke views. Isn't fetched, doesn't need cached.
 enum ColorScheme: Int, CaseIterable {
     case pineGreen
     case crayola

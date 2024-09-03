@@ -17,6 +17,7 @@ struct JokeView: View {
             AppLabel(text: text,
                      style: .title,
                      color: colorScheme.foreground)
+            .fixedSize(horizontal: false, vertical: true)
             .padding(30)
         }
     }

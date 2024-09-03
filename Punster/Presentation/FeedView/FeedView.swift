@@ -14,7 +14,22 @@ struct FeedView: View {
     var body: some View {
         NavigationStack {
             PageBackground {
-                Text(Constants.Strings.Feed.feed)
+                List(viewModel.jokes, id: \.self) { joke in
+                    JokeContainer(
+                        joke: joke,
+                        // TODO: EZ
+                        colorScheme: .pineGreen, // Hardcoded color scheme
+                        onFavoriteTapped: {
+                            // TODO: EZ
+                            // Handle the favorite tap here
+                            print("Favorite tapped for joke: \(joke.text)")
+                        }, isFavorite: .constant(false)
+                    )
+                    .listRowBackground(Color.clear)
+                }
+                .listRowSpacing(20)
+                .listStyle(.plain)
+                .padding(.vertical, 20)
             }
             .appNavBar(title: Constants.Strings.Feed.feed)
         }

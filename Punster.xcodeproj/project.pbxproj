@@ -186,9 +186,9 @@
 		782D45FD2C873E26001263A1 /* Joke */ = {
 			isa = PBXGroup;
 			children = (
+				782D46052C8743EE001263A1 /* JokeContainer.swift */,
 				782D46032C874190001263A1 /* PagedJokeView.swift */,
 				782D45FB2C873E24001263A1 /* JokeView.swift */,
-				782D46052C8743EE001263A1 /* JokeContainer.swift */,
 			);
 			path = Joke;
 			sourceTree = "<group>";
