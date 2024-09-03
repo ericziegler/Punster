@@ -11,6 +11,7 @@ protocol JokeRepositoryProtocol {
     var service: JokeServiceProtocol { get }
     var dao: JokeDAOProtocol { get }
     
+    func fetchDailyJoke() async throws -> Joke
     func fetchJokes(quantity: Int) async throws -> Jokes
     func loadFavorites() throws -> Jokes
     func addFavorite(joke: Joke) throws

@@ -15,6 +15,21 @@ final class JokeService: JokeServiceProtocol {
         self.networkService = networkService
     }
     
+    func fetchDailyJoke() async throws -> Joke {
+        let endpoint = "/Pun"
+        let parameters = [
+            "blackListFlags": "nsfw,religious,political,racist,sexist,explici",
+            "amount": "1"
+        ]
+        
+        let jsonData = try await networkService.request(endpoint: endpoint,
+                                                        parameters: parameters)
+        
+        
+        let joke = try JSONDecoder().decode(Joke.self, from: jsonData)
+        return joke
+    }
+    
     func fetchJokes(quantity: Int = 10) async throws -> Jokes {
         let endpoint = "/Pun"
         let parameters = [

@@ -39,8 +39,7 @@ enum FeedViewType {
             feedJokes = []
             if feedViewType == .feed {
                 // Load jokes from API
-                // TODO: EZ - Put back
-                let loadedJokes = Joke.mockArray//try await jokeRepository.fetchJokes(quantity: 10)
+                let loadedJokes = try await jokeRepository.fetchJokes(quantity: 10)
                 feedJokes = []
                 for (index, joke) in loadedJokes.enumerated() {
                     feedJokes.append(.init(joke: joke,

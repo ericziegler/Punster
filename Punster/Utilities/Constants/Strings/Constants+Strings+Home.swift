@@ -10,5 +10,6 @@ import Foundation
 extension Constants.Strings {
     enum Home {
         static let home = "Home".localized()
+        static let todaysPun = "Today's Pun".localized()
     }
 }

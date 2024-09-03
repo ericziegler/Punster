@@ -12,9 +12,10 @@ struct JokeContainer: View {
     
     var joke: Joke
     var colorScheme: ColorScheme
+    var showBorder: Bool
     // !! - This is a commone way to pass back up from a child to a parent.
     //      We should avoid delegation as it makes the light views cumbersome.
-    var onFavoriteTapped: (() -> Void)?    
+    var onFavoriteTapped: (() -> Void)?
     // !! - Similar to @State, changing the value of this property will force the
     //      view to redraw itself. The reason this is a binding and not @State is
     //      because a parent view holds the actual @State version of it
@@ -30,6 +31,7 @@ struct JokeContainer: View {
             .padding(.horizontal, 20)
             .padding(.bottom, 20)
         }
+        .border(Color.appSeparator, width: showBorder ? 1 : 0)
     }
     
     @ViewBuilder private func renderFavoriteBar() -> some View {
@@ -54,6 +56,7 @@ struct JokeContainer: View {
     //      but I don't remember off the top of my head =)
     JokeContainer(joke: Joke.mockData(isSingle: false),
                   colorScheme: .crimson,
+                  showBorder: false,
                   isFavorite: .constant(false))
     .frame(width: 300, height: 300)
 }

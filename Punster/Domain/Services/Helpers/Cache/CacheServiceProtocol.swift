@@ -18,4 +18,10 @@ protocol CacheServiceProtocol {
     func loadBool(for key: String) -> Bool
     func save(bool: Bool,
               for key: String)
+    func loadInt(for key: String) -> Int
+    func save(int: Int,
+              for key: String)
+    func loadDouble(for key: String) -> Double
+    func save(double: Double,
+              for key: String)
 }

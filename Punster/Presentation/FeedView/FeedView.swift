@@ -25,12 +25,14 @@ struct FeedView: View {
                     JokeContainer(
                         joke: viewModel.feedJokes[index].joke,
                         colorScheme: viewModel.feedJokes[index].colorScheme,
+                        showBorder: false,
                         onFavoriteTapped: {
                             viewModel.toggleFavoriteJoke(at: index)
                         },
                         isFavorite: $viewModel.feedJokes[index].isFavorite
                     )
                     .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
                 }
                 .listRowSpacing(20)
                 .listStyle(.plain)

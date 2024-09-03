@@ -14,6 +14,7 @@
 
 // Home
 "Home" = "Home";
+"Today's Pun" = "Today's Pun";
 
 // Feed
 "Feed" = "Feed";
@@ -23,3 +24,6 @@
 
 // Settings
 "Settings" = "Settings";
+
+// API
+"No jokes were found." = "No jokes were found.";

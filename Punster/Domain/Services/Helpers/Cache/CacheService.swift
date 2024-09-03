@@ -41,4 +41,22 @@ final class CacheService: CacheServiceProtocol {
               for key: String) {
         userDefaults.set(bool, forKey: key)
     }
+    
+    func loadInt(for key: String) -> Int {
+        userDefaults.integer(forKey: key)
+    }
+    
+    func save(int: Int,
+              for key: String) {
+        userDefaults.set(int, forKey: key)
+    }
+    
+    func loadDouble(for key: String) -> Double {
+        userDefaults.double(forKey: key)
+    }
+    
+    func save(double: Double,
+              for key: String) {
+        userDefaults.set(double, forKey: key)
+    }
 }

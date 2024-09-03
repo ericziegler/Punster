@@ -14,3 +14,11 @@ struct FeedJoke {
     var isFavorite: Bool
     let colorScheme: ColorScheme
 }
+
+extension FeedJoke {
+    static var mockData: FeedJoke {
+        FeedJoke(joke: Joke.mockData(),
+                 isFavorite: false,
+                 colorScheme: .pineGreen)
+    }
+}

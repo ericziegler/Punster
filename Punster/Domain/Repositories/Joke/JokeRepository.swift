@@ -18,6 +18,18 @@ final class JokeRepository: JokeRepositoryProtocol {
         self.dao = dao
     }
     
+    func fetchDailyJoke() async throws -> Joke {
+        // First, try to load a cached daily joke
+        if let joke = dao.loadDailyJoke() {
+            return joke
+        }
+        // If no daily joke was returned from the DAO, load from the service
+        let dailyJoke = try await service.fetchDailyJoke()
+        // save to the DAO and return it
+        try dao.saveDailyJoke(dailyJoke)
+        return dailyJoke
+    }
+    
     func fetchJokes(quantity: Int) async throws -> Jokes {
         return try await service.fetchJokes(quantity: quantity)
     }

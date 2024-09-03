@@ -8,5 +8,6 @@
 import Foundation
 
 protocol JokeServiceProtocol {
+    func fetchDailyJoke() async throws -> Joke
     func fetchJokes(quantity: Int) async throws -> Jokes
 }

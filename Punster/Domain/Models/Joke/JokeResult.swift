@@ -12,6 +12,6 @@ import Foundation
 //      about the Jokes inside.
 struct JokeResult: Codable {
     let error: Bool
-    let amount: Int
+    let amount: Int?
     let jokes: Jokes    
 }
