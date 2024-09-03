@@ -29,6 +29,9 @@
 		78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */; };
 		78F56D992C8682C4009A2781 /* JokeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D982C8682C4009A2781 /* JokeDAO.swift */; };
 		78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D9A2C8685FE009A2781 /* CacheError.swift */; };
+		78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D9C2C868B21009A2781 /* DependencyContainer.swift */; };
+		78F56DA02C8690B5009A2781 /* JokeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D9F2C8690B5009A2781 /* JokeRepositoryProtocol.swift */; };
+		78F56DA22C8690BC009A2781 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DA12C8690BC009A2781 /* JokeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDAOProtocol.swift; sourceTree = "<group>"; };
 		78F56D982C8682C4009A2781 /* JokeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDAO.swift; sourceTree = "<group>"; };
 		78F56D9A2C8685FE009A2781 /* CacheError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheError.swift; sourceTree = "<group>"; };
+		78F56D9C2C868B21009A2781 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		78F56D9F2C8690B5009A2781 /* JokeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78F56DA12C8690BC009A2781 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		78F56D602C855746009A2781 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				78F56D9E2C8690A7009A2781 /* Joke */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 		78F56D6B2C855793009A2781 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				78F56D9C2C868B21009A2781 /* DependencyContainer.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -341,6 +349,15 @@
 			children = (
 				78F56D962C8682BE009A2781 /* JokeDAOProtocol.swift */,
 				78F56D982C8682C4009A2781 /* JokeDAO.swift */,
+			);
+			path = Joke;
+			sourceTree = "<group>";
+		};
+		78F56D9E2C8690A7009A2781 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				78F56D9F2C8690B5009A2781 /* JokeRepositoryProtocol.swift */,
+				78F56DA12C8690BC009A2781 /* JokeRepository.swift */,
 			);
 			path = Joke;
 			sourceTree = "<group>";
@@ -428,9 +445,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F56D932C867A0F009A2781 /* JokeService.swift in Sources */,
+				78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */,
+				78F56DA02C8690B5009A2781 /* JokeRepositoryProtocol.swift in Sources */,
 				78F56D772C85DDBA009A2781 /* Font+Extensions.swift in Sources */,
 				78F56D4C2C8555BA009A2781 /* ContentView.swift in Sources */,
 				78F56D972C8682BE009A2781 /* JokeDAOProtocol.swift in Sources */,
+				78F56DA22C8690BC009A2781 /* JokeRepository.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
 				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
 				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
