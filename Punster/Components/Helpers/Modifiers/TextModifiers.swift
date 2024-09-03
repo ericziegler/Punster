@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+// !! - This is how you create view modifiers (aka things you can add at the end of a view/component.
+//      They come in two parts:
+//      1. The struct as a ViewModifier which defines the look/behavior you want to modify.
+//      2. A view extension with a convenience function that calls the view modifier.
+//
+//      This file actually has three different modifiers defined (and three convenience View funcs)
 struct AppRegularFontModifier: ViewModifier {
     var size: Double
 

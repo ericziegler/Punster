@@ -14,6 +14,7 @@ struct PageBackground<Content: View>: View {
     var color: Color {
         overrideColor ?? Color.appBackground
     }
+    // !! - This is a common way to allow a parent view to embed content within a child view.
     @ViewBuilder var content: () -> Content
     
     var body: some View {

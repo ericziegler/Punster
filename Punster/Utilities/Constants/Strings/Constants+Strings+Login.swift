@@ -9,7 +9,7 @@ import Foundation
 
 extension Constants.Strings {
     enum Login {
-        static let login = "Login"
-        static let loginMessage = "This login is super secure. Tap the button to login."
+        static let login = "Login".localized()
+        static let loginMessage = "This login is super secure. Tap the button to login.".localized()
     }
 }

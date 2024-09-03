@@ -8,6 +8,11 @@
 import Foundation
 import Swinject
 
+// !! - A slightly different approach to DependencyContainer than we currently use.
+//      This registers and resolves abstract protocols as opposed to concrete classes.
+//      This does two things:
+//      1. Makes us slightly less prone to errors/crashes
+//      2. Lets us swap out for testing data (which I haven't included here).
 final class DependencyContainer {
     
     static let shared = DependencyContainer()

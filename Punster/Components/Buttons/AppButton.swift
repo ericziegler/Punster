@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AppButton: View {
     
+    // !! - Note that these properties don't need to be @State or @Binding because the view
+    //      that contains the AppButton would be destroyed and recreated all the time, passing
+    //      in new values on the button's init, allowing it to update.
     var text: String
     var overrideTextColor: Color?
     var textColor: Color {
