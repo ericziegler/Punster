@@ -16,6 +16,10 @@
 		782D45DB2C86B398001263A1 /* AlertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DA2C86B398001263A1 /* AlertInfo.swift */; };
 		782D45DD2C86B403001263A1 /* Constants+Strings+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DC2C86B403001263A1 /* Constants+Strings+Shared.swift */; };
 		782D45DF2C86B61B001263A1 /* JokeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DE2C86B61B001263A1 /* JokeResult.swift */; };
+		782D45E22C86B8D7001263A1 /* UserDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E12C86B8D7001263A1 /* UserDAOProtocol.swift */; };
+		782D45E42C86B8DE001263A1 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E32C86B8DE001263A1 /* UserDAO.swift */; };
+		782D45E72C86BA70001263A1 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E62C86BA70001263A1 /* UserRepositoryProtocol.swift */; };
+		782D45E92C86BA7E001263A1 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45E82C86BA7E001263A1 /* UserRepository.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -65,6 +69,10 @@
 		782D45DA2C86B398001263A1 /* AlertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfo.swift; sourceTree = "<group>"; };
 		782D45DC2C86B403001263A1 /* Constants+Strings+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Shared.swift"; sourceTree = "<group>"; };
 		782D45DE2C86B61B001263A1 /* JokeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResult.swift; sourceTree = "<group>"; };
+		782D45E12C86B8D7001263A1 /* UserDAOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAOProtocol.swift; sourceTree = "<group>"; };
+		782D45E32C86B8DE001263A1 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		782D45E62C86BA70001263A1 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		782D45E82C86BA7E001263A1 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +131,24 @@
 				782D45DA2C86B398001263A1 /* AlertInfo.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		782D45E02C86B8CD001263A1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				782D45E12C86B8D7001263A1 /* UserDAOProtocol.swift */,
+				782D45E32C86B8DE001263A1 /* UserDAO.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		782D45E52C86BA5F001263A1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				782D45E62C86BA70001263A1 /* UserRepositoryProtocol.swift */,
+				782D45E82C86BA7E001263A1 /* UserRepository.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		78F56D3D2C8555BA009A2781 = {
@@ -241,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				78F56D952C8682B4009A2781 /* Joke */,
+				782D45E02C86B8CD001263A1 /* User */,
 			);
 			path = DAOs;
 			sourceTree = "<group>";
@@ -258,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				78F56D9E2C8690A7009A2781 /* Joke */,
+				782D45E52C86BA5F001263A1 /* User */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -588,6 +616,7 @@
 				78F56DBC2C86A787009A2781 /* FeedView.swift in Sources */,
 				78F56D7F2C85F3F5009A2781 /* Joke.swift in Sources */,
 				78F56DBF2C86A7AC009A2781 /* FavoritesViewModel.swift in Sources */,
+				782D45E72C86BA70001263A1 /* UserRepositoryProtocol.swift in Sources */,
 				78F56D892C866DA1009A2781 /* NetworkServiceProtocol.swift in Sources */,
 				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
 				78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */,
@@ -601,8 +630,11 @@
 				782D45D42C86AD06001263A1 /* Constants+Strings+Feed.swift in Sources */,
 				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
 				78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */,
+				782D45E92C86BA7E001263A1 /* UserRepository.swift in Sources */,
 				78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */,
 				78F56D992C8682C4009A2781 /* JokeDAO.swift in Sources */,
+				782D45E42C86B8DE001263A1 /* UserDAO.swift in Sources */,
+				782D45E22C86B8D7001263A1 /* UserDAOProtocol.swift in Sources */,
 				782D45D02C86ACB9001263A1 /* NavBarModifier.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 				78F56DA72C86A473009A2781 /* MainTabViewModel.swift in Sources */,

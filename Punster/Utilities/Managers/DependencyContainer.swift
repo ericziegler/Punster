@@ -16,7 +16,6 @@ final class DependencyContainer {
     
     private init() {
         container = Container()
-        
         registerServices()
     }
     
@@ -40,6 +39,10 @@ final class DependencyContainer {
             return JokeDAO(cacheService: cacheService)
         }.inObjectScope(.container)
         
+        container.register(UserDAOProtocol.self) { resolver in
+            let cacheService = resolver.resolve(CacheServiceProtocol.self)!
+            return UserDAO(cacheService: cacheService)
+        }.inObjectScope(.container)
 
         // MARK: - Service Registrations
         
@@ -56,6 +59,11 @@ final class DependencyContainer {
             return JokeRepository(service: jokeService,
                                   dao: jokeDAO)
         }.inObjectScope(.container)
+        
+        container.register(UserRepositoryProtocol.self) { resolver in
+            let userDAO = resolver.resolve(UserDAOProtocol.self)!
+            return UserRepository(dao: userDAO)
+        }.inObjectScope(.container)
     }
     
     func resolve<Service>(_ serviceType: Service.Type) -> Service {
@@ -64,35 +72,4 @@ final class DependencyContainer {
         }
         return service
     }
-    
-    // TODO: EZ - Set up unit tests
-//    func setupForUnitTests() {
-//        // Clear all registrations
-//        container.removeAll()
-//        
-//        // Register mock services for unit testing
-//        container.register(CacheServiceProtocol.self) { _ in
-//            MockCacheService()
-//        }.inObjectScope(.container)
-//        
-//        container.register(NetworkServiceProtocol.self) { _ in
-//            MockNetworkService()
-//        }.inObjectScope(.container)
-//        
-//        container.register(JokeDAOProtocol.self) { resolver in
-//            let cacheService = resolver.resolve(CacheServiceProtocol.self)!
-//            return JokeDAO(cacheService: cacheService)
-//        }.inObjectScope(.container)
-//        
-//        container.register(JokeServiceProtocol.self) { resolver in
-//            let networkService = resolver.resolve(NetworkServiceProtocol.self)!
-//            return JokeService(networkService: networkService)
-//        }.inObjectScope(.container)
-//        
-//        container.register(JokeRepositoryProtocol.self) { resolver in
-//            let jokeDAO = resolver.resolve(JokeDAOProtocol.self)!
-//            let jokeService = resolver.resolve(JokeServiceProtocol.self)!
-//            return JokeRepository(jokeDAO: jokeDAO, jokeService: jokeService)
-//        }.inObjectScope(.container)
-//    }
 }

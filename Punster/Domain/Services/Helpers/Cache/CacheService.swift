@@ -32,4 +32,13 @@ final class CacheService: CacheServiceProtocol {
               for key: String) {
         userDefaults.set(string, forKey: key)
     }
+    
+    func loadBool(for key: String) -> Bool {
+        userDefaults.bool(forKey: key)
+    }
+    
+    func save(bool: Bool,
+              for key: String) {
+        userDefaults.set(bool, forKey: key)
+    }
 }
