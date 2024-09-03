@@ -12,7 +12,6 @@
 		782D45D22C86ACFC001263A1 /* Constants+Strings+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */; };
 		782D45D42C86AD06001263A1 /* Constants+Strings+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */; };
 		782D45D62C86AD10001263A1 /* Constants+Strings+Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */; };
-		782D45D82C86AD18001263A1 /* Constants+Feeds+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */; };
 		782D45DB2C86B398001263A1 /* AlertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DA2C86B398001263A1 /* AlertInfo.swift */; };
 		782D45DD2C86B403001263A1 /* Constants+Strings+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DC2C86B403001263A1 /* Constants+Strings+Shared.swift */; };
 		782D45DF2C86B61B001263A1 /* JokeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45DE2C86B61B001263A1 /* JokeResult.swift */; };
@@ -68,8 +67,6 @@
 		78F56DB72C86A74D009A2781 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB62C86A74D009A2781 /* HomeViewModel.swift */; };
 		78F56DBA2C86A780009A2781 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DB92C86A780009A2781 /* FeedViewModel.swift */; };
 		78F56DBC2C86A787009A2781 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DBB2C86A787009A2781 /* FeedView.swift */; };
-		78F56DC42C86A7D7009A2781 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DC32C86A7D7009A2781 /* SettingsViewModel.swift */; };
-		78F56DC62C86A7E5009A2781 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56DC52C86A7E5009A2781 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +75,6 @@
 		782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Home.swift"; sourceTree = "<group>"; };
 		782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Feed.swift"; sourceTree = "<group>"; };
 		782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Favorites.swift"; sourceTree = "<group>"; };
-		782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Feeds+Settings.swift"; sourceTree = "<group>"; };
 		782D45DA2C86B398001263A1 /* AlertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfo.swift; sourceTree = "<group>"; };
 		782D45DC2C86B403001263A1 /* Constants+Strings+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Shared.swift"; sourceTree = "<group>"; };
 		782D45DE2C86B61B001263A1 /* JokeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResult.swift; sourceTree = "<group>"; };
@@ -134,8 +130,6 @@
 		78F56DB62C86A74D009A2781 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		78F56DB92C86A780009A2781 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		78F56DBB2C86A787009A2781 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		78F56DC32C86A7D7009A2781 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		78F56DC52C86A7E5009A2781 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,7 +262,6 @@
 				78F56DA32C86A45A009A2781 /* MainTab */,
 				78F56DB32C86A73C009A2781 /* HomeView */,
 				78F56DB82C86A772009A2781 /* FeedView */,
-				78F56DC22C86A7CB009A2781 /* SettingsView */,
 				78F56D612C855756009A2781 /* Shared */,
 			);
 			path = Presentation;
@@ -523,7 +516,6 @@
 				782D45D12C86ACFC001263A1 /* Constants+Strings+Home.swift */,
 				782D45D32C86AD06001263A1 /* Constants+Strings+Feed.swift */,
 				782D45D52C86AD10001263A1 /* Constants+Strings+Favorites.swift */,
-				782D45D72C86AD18001263A1 /* Constants+Feeds+Settings.swift */,
 				782D460B2C8775F5001263A1 /* Constants+Strings+API.swift */,
 			);
 			path = Strings;
@@ -561,15 +553,6 @@
 				78F56DB92C86A780009A2781 /* FeedViewModel.swift */,
 			);
 			path = FeedView;
-			sourceTree = "<group>";
-		};
-		78F56DC22C86A7CB009A2781 /* SettingsView */ = {
-			isa = PBXGroup;
-			children = (
-				78F56DC52C86A7E5009A2781 /* SettingsView.swift */,
-				78F56DC32C86A7D7009A2781 /* SettingsViewModel.swift */,
-			);
-			path = SettingsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,8 +667,6 @@
 				78F56D8C2C867695009A2781 /* CacheServiceProtocol.swift in Sources */,
 				78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */,
 				78F56DBA2C86A780009A2781 /* FeedViewModel.swift in Sources */,
-				78F56DC62C86A7E5009A2781 /* SettingsView.swift in Sources */,
-				782D45D82C86AD18001263A1 /* Constants+Feeds+Settings.swift in Sources */,
 				78F56DA52C86A461009A2781 /* MainTabView.swift in Sources */,
 				782D45DB2C86B398001263A1 /* AlertInfo.swift in Sources */,
 				782D45D62C86AD10001263A1 /* Constants+Strings+Favorites.swift in Sources */,
@@ -708,7 +689,6 @@
 				782D45D22C86ACFC001263A1 /* Constants+Strings+Home.swift in Sources */,
 				782D46062C8743EE001263A1 /* JokeContainer.swift in Sources */,
 				782D45CE2C86AA89001263A1 /* PageBackground.swift in Sources */,
-				78F56DC42C86A7D7009A2781 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,13 +32,13 @@ struct HomeView: View {
             }
             .appNavBar(title: Constants.Strings.Home.home)
         }
-        .onAppear(perform: {
-            // !! - For all intents and purposes, .onAppear behaves like a
-            //      view controller's viewDidLoad().
-            Task {
-                await viewModel.loadData()
-            }
-        })
+        .task {
+            // !! - For all intents and purposes, .task behaves like an
+            //      async version of view controller's viewDidAppear().
+            //      If you want a regular version that's similar to viewDidAppear,
+            //      use the .onAppear(perform: {} block instead.
+            await viewModel.loadData()
+        }
         .alert(viewModel.alertInfo.title,
                isPresented: $viewModel.isAlertVisible,
                actions: {

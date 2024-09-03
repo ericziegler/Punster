@@ -40,11 +40,9 @@ struct FeedView: View {
             }
             .appNavBar(title: viewModel.feedViewType == .feed ? Constants.Strings.Feed.feed : Constants.Strings.Favorites.favorites)
         }
-        .onAppear(perform: {
-            Task {
-                await viewModel.loadData()
-            }
-        })
+        .task {
+            await viewModel.loadData()
+        }
         .alert(viewModel.alertInfo.title,
                isPresented: $viewModel.isAlertVisible,
                actions: {

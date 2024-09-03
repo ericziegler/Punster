@@ -29,6 +29,11 @@ enum FeedViewType {
     }
     
     func loadData() async {
+        // Only load the feed if we haven't previously loaded
+        if hasAlreadyLoaded() {
+            return
+        }
+        
         do {
             // Load color schemes
             let allColorSchemes = ColorScheme.allCases.shuffled()
@@ -56,6 +61,15 @@ enum FeedViewType {
         } catch {
             handleError(error)
         }
+    }
+    
+    private func hasAlreadyLoaded() -> Bool {
+        if feedViewType == .favorite {
+            // We always want to reload favorites
+            return false
+        }
+        
+        return !feedJokes.isEmpty
     }
     
     func handleError(_ error: Error) {

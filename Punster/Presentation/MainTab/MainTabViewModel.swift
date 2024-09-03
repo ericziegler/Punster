@@ -13,7 +13,6 @@ final class MainTabViewModel: ObservableObject {
         case home
         case feed
         case favorites
-        case settings
         
         var text: String {
             switch self {
@@ -23,8 +22,6 @@ final class MainTabViewModel: ObservableObject {
                 return Constants.Strings.Feed.feed
             case .favorites:
                 return Constants.Strings.Favorites.favorites
-            case .settings:
-                return Constants.Strings.Settings.settings
             }
         }
         
@@ -36,8 +33,6 @@ final class MainTabViewModel: ObservableObject {
                 return "newspaper.fill"
             case .favorites:
                 return "heart.fill"
-            case .settings:
-                return "gearshape.fill"
             }
         }
     }

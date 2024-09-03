@@ -32,7 +32,6 @@ struct MainTabView: View {
                 renderTab(view: HomeView(), tab: .home)
                 renderTab(view: FeedView(feedViewType: .feed), tab: .feed)
                 renderTab(view: FeedView(feedViewType: .favorite), tab: .favorites)
-                renderTab(view: SettingsView(), tab: .settings)
             }
             .toolbarBackground(Color.appBackgroundTertiary, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
