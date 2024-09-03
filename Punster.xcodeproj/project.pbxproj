@@ -27,6 +27,11 @@
 		782D45F42C86BD04001263A1 /* Constants+Strings+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */; };
 		782D45F82C873CCD001263A1 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F72C873CCD001263A1 /* AppLabel.swift */; };
 		782D45FA2C873CDC001263A1 /* AppTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45F92C873CDC001263A1 /* AppTextStyle.swift */; };
+		782D45FC2C873E24001263A1 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45FB2C873E24001263A1 /* JokeView.swift */; };
+		782D46002C873F01001263A1 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D45FF2C873F01001263A1 /* ColorScheme.swift */; };
+		782D46022C873F23001263A1 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46012C873F23001263A1 /* Color+Extensions.swift */; };
+		782D46042C874190001263A1 /* PagedJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46032C874190001263A1 /* PagedJokeView.swift */; };
+		782D46062C8743EE001263A1 /* JokeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D46052C8743EE001263A1 /* JokeContainer.swift */; };
 		78F56D4A2C8555BA009A2781 /* PunsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F56D492C8555BA009A2781 /* PunsterApp.swift */; };
 		78F56D4E2C8555BB009A2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D4D2C8555BB009A2781 /* Assets.xcassets */; };
 		78F56D512C8555BB009A2781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F56D502C8555BB009A2781 /* Preview Assets.xcassets */; };
@@ -87,6 +92,11 @@
 		782D45F32C86BD04001263A1 /* Constants+Strings+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings+Login.swift"; sourceTree = "<group>"; };
 		782D45F72C873CCD001263A1 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
 		782D45F92C873CDC001263A1 /* AppTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextStyle.swift; sourceTree = "<group>"; };
+		782D45FB2C873E24001263A1 /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
+		782D45FF2C873F01001263A1 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		782D46012C873F23001263A1 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		782D46032C874190001263A1 /* PagedJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedJokeView.swift; sourceTree = "<group>"; };
+		782D46052C8743EE001263A1 /* JokeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeContainer.swift; sourceTree = "<group>"; };
 		78F56D462C8555BA009A2781 /* Punster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F56D492C8555BA009A2781 /* PunsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunsterApp.swift; sourceTree = "<group>"; };
 		78F56D4D2C8555BB009A2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +181,24 @@
 				782D45ED2C86BC1D001263A1 /* LoginView.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		782D45FD2C873E26001263A1 /* Joke */ = {
+			isa = PBXGroup;
+			children = (
+				782D46032C874190001263A1 /* PagedJokeView.swift */,
+				782D45FB2C873E24001263A1 /* JokeView.swift */,
+				782D46052C8743EE001263A1 /* JokeContainer.swift */,
+			);
+			path = Joke;
+			sourceTree = "<group>";
+		};
+		782D45FE2C873EF4001263A1 /* ColorScheme */ = {
+			isa = PBXGroup;
+			children = (
+				782D45FF2C873F01001263A1 /* ColorScheme.swift */,
+			);
+			path = ColorScheme;
 			sourceTree = "<group>";
 		};
 		78F56D3D2C8555BA009A2781 = {
@@ -281,6 +309,7 @@
 		78F56D5D2C855739009A2781 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				782D45FE2C873EF4001263A1 /* ColorScheme */,
 				78F56D822C85F44A009A2781 /* Joke */,
 				782D45D92C86B38B001263A1 /* Shared */,
 			);
@@ -340,6 +369,7 @@
 		78F56D652C85576C009A2781 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				782D45FD2C873E26001263A1 /* Joke */,
 				782D45CD2C86AA89001263A1 /* PageBackground.swift */,
 			);
 			path = Views;
@@ -386,6 +416,7 @@
 			children = (
 				78F56D762C85DDBA009A2781 /* Font+Extensions.swift */,
 				78F56DB12C86A692009A2781 /* String+Extensions.swift */,
+				782D46012C873F23001263A1 /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -635,6 +666,7 @@
 				78F56DB22C86A692009A2781 /* String+Extensions.swift in Sources */,
 				782D45FA2C873CDC001263A1 /* AppTextStyle.swift in Sources */,
 				78F56DA92C86A4C1009A2781 /* Constants.swift in Sources */,
+				782D46002C873F01001263A1 /* ColorScheme.swift in Sources */,
 				782D45F82C873CCD001263A1 /* AppLabel.swift in Sources */,
 				78F56D9D2C868B21009A2781 /* DependencyContainer.swift in Sources */,
 				78F56DA02C8690B5009A2781 /* JokeRepositoryProtocol.swift in Sources */,
@@ -665,6 +697,8 @@
 				78F56D912C867A08009A2781 /* JokeServiceProtocol.swift in Sources */,
 				782D45D42C86AD06001263A1 /* Constants+Strings+Feed.swift in Sources */,
 				78F56D872C866D98009A2781 /* NetworkService.swift in Sources */,
+				782D45FC2C873E24001263A1 /* JokeView.swift in Sources */,
+				782D46042C874190001263A1 /* PagedJokeView.swift in Sources */,
 				78F56D8E2C8676BA009A2781 /* CacheService.swift in Sources */,
 				782D45E92C86BA7E001263A1 /* UserRepository.swift in Sources */,
 				78F56D9B2C8685FE009A2781 /* CacheError.swift in Sources */,
@@ -674,7 +708,9 @@
 				782D45D02C86ACB9001263A1 /* NavBarModifier.swift in Sources */,
 				78F56D842C85F51C009A2781 /* JokeType.swift in Sources */,
 				78F56DA72C86A473009A2781 /* MainTabViewModel.swift in Sources */,
+				782D46022C873F23001263A1 /* Color+Extensions.swift in Sources */,
 				782D45D22C86ACFC001263A1 /* Constants+Strings+Home.swift in Sources */,
+				782D46062C8743EE001263A1 /* JokeContainer.swift in Sources */,
 				782D45CE2C86AA89001263A1 /* PageBackground.swift in Sources */,
 				78F56DC42C86A7D7009A2781 /* SettingsViewModel.swift in Sources */,
 			);
